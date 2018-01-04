@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require("webpack");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var rootPath = process.cwd();
 
@@ -12,7 +11,7 @@ module.exports = {
 
   },
   output: {
-    path: path.resolve(rootPath, 'src'),
+    path: path.resolve(rootPath, 'dist'),
     filename: 'main.bundle.js'
   },
   module: {
